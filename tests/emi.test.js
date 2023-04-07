@@ -1,7 +1,7 @@
 const EMI = require('../src/emi.js')
 
 test('Loan is defined', () => {
-  expect(EMI.Loan).toBeDefined()  
+  expect(EMI.Loan).toBeDefined()
 })
 
 test('Should calculate correct EMI installments', () => {
@@ -21,4 +21,4 @@ test('Should calculate correct EMI installments', () => {
 
 test('Should throw an error on negative interest rate', () => {
   expect(() => EMI.Loan(10000, -1, 10)).toThrowError('wrong parameters: 10000 -1 10')
-});
+})
